@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>juliaan.eu</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='44' fill='%231e40af'/><text x='50' y='67' font-size='52' text-anchor='middle' fill='white' font-family='system-ui' font-weight='700'>j</text></svg>">
+  <style>
+    :root {
+      --bg: #f6f7f9;
+      --card: #ffffff;
+      --text: #111827;
+      --muted: #6b7280;
+      --border: #e5e7eb;
+      --hockey: #2d6a1f;
+      --hockey-soft: #e8f3e3;
+      --finance: #1e40af;
+      --finance-soft: #e3eafb;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0f1115;
+        --card: #181b21;
+        --text: #f3f4f6;
+        --muted: #9ca3af;
+        --border: #2a2f38;
+        --hockey: #7cc46a;
+        --hockey-soft: #1c2a19;
+        --finance: #8aa8ff;
+        --finance-soft: #1a2240;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100dvh;
+      display: grid;
+      place-items: center;
+      padding: 24px 16px;
+      background: var(--bg);
+      color: var(--text);
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    }
+    main { width: 100%; max-width: 440px; }
+    h1 { margin: 0 0 6px; font-size: 34px; letter-spacing: -0.02em; }
+    p { margin: 0 0 32px; color: var(--muted); font-size: 18px; }
+    nav { display: grid; gap: 16px; }
+    a.knop {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      min-height: 88px;
+      padding: 16px 20px;
+      border-radius: 18px;
+      background: var(--card);
+      border: 1px solid var(--border);
+      color: var(--text);
+      text-decoration: none;
+      transition: transform .12s ease, border-color .12s ease;
+    }
+    a.knop:hover { transform: translateY(-2px); border-color: var(--accent); }
+    a.knop:active { transform: scale(.98); }
+    a.knop:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
+    .icoon {
+      flex: none;
+      display: grid;
+      place-items: center;
+      width: 56px;
+      height: 56px;
+      border-radius: 14px;
+      background: var(--soft);
+      color: var(--accent);
+    }
+    .tekst { flex: 1; }
+    .titel { display: block; font-size: 22px; font-weight: 700; }
+    .sub { display: block; font-size: 16px; color: var(--muted); margin-top: 2px; }
+    .pijl { color: var(--muted); font-size: 24px; }
+    .hockey { --accent: var(--hockey); --soft: var(--hockey-soft); }
+    .finance { --accent: var(--finance); --soft: var(--finance-soft); }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>juliaan.eu</h1>
+    <p>Waar wil je naartoe?</p>
+    <nav>
+      <a class="knop hockey" href="/hockey/">
+        <span class="icoon" aria-hidden="true">
+          <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3v11a4 4 0 0 0 4 4h3"/><circle cx="18" cy="18" r="2.5"/></svg>
+        </span>
+        <span class="tekst"><span class="titel">Hockey</span><span class="sub">Opstelling &amp; wissels</span></span>
+        <span class="pijl" aria-hidden="true">›</span>
+      </a>
+      <a class="knop finance" href="https://financeplannerapp.com/">
+        <span class="icoon" aria-hidden="true">
+          <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="m7 15 4-4 3 3 5-6"/></svg>
+        </span>
+        <span class="tekst"><span class="titel">Finance Planner</span><span class="sub">financeplannerapp.com</span></span>
+        <span class="pijl" aria-hidden="true">›</span>
+      </a>
+    </nav>
+  </main>
+</body>
+</html>
