@@ -16,6 +16,8 @@
       --hockey-soft: #e8f3e3;
       --finance: #1e40af;
       --finance-soft: #e3eafb;
+      --app: #0f766e;
+      --app-soft: #dcf3ef;
     }
     @media (prefers-color-scheme: dark) {
       :root {
@@ -28,6 +30,8 @@
         --hockey-soft: #1c2a19;
         --finance: #8aa8ff;
         --finance-soft: #1a2240;
+        --app: #5eead4;
+        --app-soft: #163330;
       }
     }
     * { box-sizing: border-box; }
@@ -77,6 +81,7 @@
     .pijl { color: var(--muted); font-size: 24px; }
     .hockey { --accent: var(--hockey); --soft: var(--hockey-soft); }
     .finance { --accent: var(--finance); --soft: var(--finance-soft); }
+    .app { --accent: var(--app); --soft: var(--app-soft); }
     .inlog { margin-top: 28px; text-align: center; }
     .inlog a {
       display: inline-block;
@@ -108,6 +113,13 @@
           <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="m7 15 4-4 3 3 5-6"/></svg>
         </span>
         <span class="tekst"><span class="titel">Finance Planner</span><span class="sub">financeplannerapp.com</span></span>
+        <span class="pijl" aria-hidden="true">›</span>
+      </a>
+      <a class="knop app" href="https://app.financeplannerapp.com/" data-goatcounter-click="start-finance-app" data-goatcounter-title="Startpagina: Finance Planner web-app">
+        <span class="icoon" aria-hidden="true">
+          <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2"/><path d="M8 6h8"/><path d="M8 11h.01M12 11h.01M16 11h.01M8 15h.01M12 15h.01M16 15h.01M8 19h.01M12 19h.01M16 19h.01"/></svg>
+        </span>
+        <span class="tekst"><span class="titel">Finance Planner web-app</span><span class="sub">Plannen in je browser</span></span>
         <span class="pijl" aria-hidden="true">›</span>
       </a>
     </nav>
