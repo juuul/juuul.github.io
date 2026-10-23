@@ -82,6 +82,11 @@
     .hockey { --accent: var(--hockey); --soft: var(--hockey-soft); }
     .finance { --accent: var(--finance); --soft: var(--finance-soft); }
     .app { --accent: var(--app); --soft: var(--app-soft); }
+    .contact { margin-top: 28px; text-align: center; }
+    .contact h2 { margin: 0 0 10px; font-size: 18px; }
+    .contact-links { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px 20px; }
+    .contact a { color: var(--finance); text-underline-offset: 3px; }
+    .contact a:focus-visible { outline: 3px solid var(--finance); outline-offset: 3px; }
     .inlog { margin-top: 28px; text-align: center; }
     .inlog a {
       display: inline-block;
@@ -123,6 +128,13 @@
         <span class="pijl" aria-hidden="true">›</span>
       </a>
     </nav>
+    <section class="contact" aria-labelledby="contact-titel">
+      <h2 id="contact-titel">Contact</h2>
+      <div class="contact-links">
+        <a href="mailto:juliaan@gmail.com">juliaan@gmail.com</a>
+        <a href="https://www.linkedin.com/in/juliaan-meijboom-313b7924" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      </div>
+    </section>
     <div class="inlog">
       <a href="https://prive.juliaan.eu/" rel="nofollow" data-goatcounter-click="start-inlog" data-goatcounter-title="Startpagina: Inloggen">Inloggen</a>
     </div>
