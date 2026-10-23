@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="no-referrer">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Feedback beheren – Juliaan</title>
+  <link rel="stylesheet" href="feedback.css">
+  <script src="feedback-beheer.js" defer></script>
+</head>
+<body>
+  <main class="beheer">
+    <div class="top"><a href="https://prive.juliaan.eu/">← Mijn apps</a><button id="logout" hidden>Uitloggen</button></div>
+    <h1>Feedback beheren</h1>
+    <p id="test-mode" hidden>Testomgeving: dit zijn geen echte feedbackberichten.</p>
+    <form id="login" class="card">
+      <p>Log in met je eigen hockeybeheerdersaccount. Alleen Juliaan heeft toegang.</p>
+      <label>E-mailadres<input name="email" type="email" autocomplete="username" required></label>
+      <label>Wachtwoord<input name="password" type="password" autocomplete="current-password" required></label>
+      <button class="primary">Inloggen</button>
+    </form>
+    <p id="notice" class="notice" role="status"></p>
+    <section id="portal" hidden>
+      <div class="filters">
+        <label>App<select id="app-filter"><option value="">Alle apps</option><option value="website">juliaan.eu</option><option value="hockey">Hockey</option><option value="finance">Finance Planner</option><option value="finance-web">Finance Planner web-app</option></select></label>
+        <label>Status<select id="status-filter"><option value="">Alle berichten</option><option value="nieuw">Nieuw</option><option value="afgehandeld">Afgehandeld</option></select></label>
+        <button id="refresh">Verversen</button>
+      </div>
+      <p class="muted">Verwijderen wist het bericht en nog wachtende mails. Eerder verstuurde mails en bestaande back-ups blijven bewaard.</p>
+      <div id="items"></div>
+      <div class="actions"><button id="previous">Vorige</button><span id="page"></span><button id="next">Volgende</button></div>
+    </section>
+  </main>
+</body>
+</html>
