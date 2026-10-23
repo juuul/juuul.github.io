@@ -17,8 +17,9 @@
   }
   document.getElementById('test-mode').hidden = !test;
   const form = document.getElementById('feedback-form');
+  const contact = form.dataset.soort === 'contact';
   const chosen = query.get('app');
-  if (['website', 'hockey', 'finance', 'finance-web'].includes(chosen)) form.elements.app.value = chosen;
+  if (!contact && ['website', 'hockey', 'finance', 'finance-web'].includes(chosen)) form.elements.app.value = chosen;
   let inzending = crypto.randomUUID();
   form.addEventListener('submit', async event => {
     event.preventDefault();
