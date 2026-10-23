@@ -2,7 +2,7 @@
   const test = new URLSearchParams(location.search).get('omgeving') === 'test' || location.pathname.includes('/test/api/feedback/voorbeeld/');
   const api = 'https://serverbot.taild1b3c5.ts.net' + (test ? '/test' : '');
   const key = 'juliaan.feedback.' + (test ? 'test' : 'live');
-  const apps = { website: 'juliaan.eu', hockey: 'Hockey', finance: 'Finance Planner', 'finance-web': 'Finance Planner web-app' };
+  const apps = { website: 'juliaan.eu', hockey: 'Hockey', finance: 'Finance Planner', 'finance-web': 'Finance Planner web-app', contact: 'Website of app laten maken' };
   const statuses = { wacht: 'Wacht op verzending', bezig: 'Wordt verstuurd', verzonden: 'Verstuurd', fout: 'Mislukt; wordt opnieuw geprobeerd' };
   let token = '', pagina = 1, totaal = 0, loading = false;
   try { token = sessionStorage.getItem(key) || ''; } catch (_) {}

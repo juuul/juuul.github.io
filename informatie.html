@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="no-referrer">
+  <meta name="description" content="Een idee voor een website of app? Neem contact op met Juliaan en ontdek wat er mogelijk is.">
+  <title>Website of app laten maken – Juliaan</title>
+  <link rel="stylesheet" href="feedback.css">
+  <script src="feedback.js" defer></script>
+</head>
+<body>
+  <main>
+    <a href="./">← juliaan.eu</a>
+    <h1>Een idee voor een website of app?</h1>
+    <p>Ik maak websites en apps die iets voor je oplossen. Denk aan een handige tool voor je vereniging, een overzicht voor je bedrijf of een app voor een eigen idee.</p>
+    <p>Heb je iets in gedachten? Je hoeft het nog niet helemaal uitgewerkt te hebben. Neem gerust contact op, dan kijken we samen wat er mogelijk is.</p>
+    <a class="button" href="#contactformulier">Bespreek je idee</a>
+    <p id="test-mode" class="notice" hidden>Testomgeving: berichten en mails komen uitsluitend in de testomgeving.</p>
+    <form id="feedback-form" class="card" data-soort="contact" aria-labelledby="contactformulier">
+      <h2 id="contactformulier" tabindex="-1">Bespreek je idee</h2>
+      <input type="hidden" name="app" value="contact">
+      <label>Naam<input name="naam" autocomplete="name" required maxlength="100"></label>
+      <label>E-mailadres<input name="email" type="email" autocomplete="email" required maxlength="254"></label>
+      <label>Wat heb je in gedachten?
+        <textarea name="bericht" required minlength="3" maxlength="5000" aria-describedby="message-help"></textarea>
+        <small id="message-help">Een korte omschrijving is genoeg. Deel geen wachtwoorden of andere vertrouwelijke gegevens.</small>
+      </label>
+      <div class="trap" aria-hidden="true"><label>Website<input name="website" tabindex="-1" autocomplete="off"></label></div>
+      <p class="muted">Alleen Juliaan kan je bericht en contactgegevens bekijken en gebruikt die om contact met je op te nemen over je idee. Je bericht wordt niet openbaar. Technische serverlogs kunnen je IP-adres bevatten.</p>
+      <button class="primary" type="submit">Verstuur je idee</button>
+      <p id="error" class="error notice" role="alert" hidden></p>
+    </form>
+    <section id="success" class="card" role="status" tabindex="-1" hidden>
+      <h2>Bedankt voor je bericht!</h2>
+      <p>Je idee is ontvangen door Juliaan.</p>
+      <p id="confirmation-note" class="muted" hidden>Je krijgt ook een ontvangstbevestiging per mail. Bij meerdere berichten op één dag ontvang je maximaal één bevestiging.</p>
+      <a class="button" href="./">Naar juliaan.eu</a>
+    </section>
+  </main>
+</body>
+</html>
