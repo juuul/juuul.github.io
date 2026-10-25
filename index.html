@@ -53,8 +53,9 @@
     .site-acties a { padding: 12px 16px; border: 1px solid var(--border); border-radius: 12px; background: var(--card); color: var(--finance); text-decoration: none; font-size: 15px; }
     .site-acties a:hover { border-color: currentColor; }
     .site-acties a:focus-visible { outline: 3px solid var(--finance); outline-offset: 3px; }
-    .deel-site { margin-top: 28px; text-align: center; }
-    .deel-site img { display: block; margin: 12px auto 6px; width: 150px; height: 150px; border-radius: 10px; }
+    .deel-site { margin-top: 28px; padding: 20px; text-align: center; background: var(--card); border: 1px solid var(--border); border-radius: 18px; }
+    .deel-site strong { font-size: 20px; }
+    .deel-site img { display: block; margin: 16px auto 12px; width: min(220px, 100%); height: auto; background: #fff; border-radius: 12px; }
     .deel-site p { font-size: 14px; margin: 0; }
     [hidden] { display: none !important; }
     a.knop {
@@ -155,14 +156,14 @@
     </section>
     <section class="deel-site" id="deel-site" aria-label="Website delen">
       <strong>Deel juliaan.eu</strong>
-      <img src="juliaan-qr.svg" alt="QR-code voor https://juliaan.eu/" width="150" height="150">
-      <p>Scan om deze website te openen.</p>
+      <img src="juliaan-qr.svg" alt="QR-code voor https://juliaan.eu/" width="220" height="220">
+      <p>Scan om juliaan.eu te openen.</p>
     </section>
     <div class="inlog">
       <a id="inloggen" href="https://prive.juliaan.eu/" rel="nofollow" data-goatcounter-click="start-inlog" data-goatcounter-title="Startpagina: Inloggen">Inloggen</a>
     </div>
   </main>
-  <script src="startpagina.js"></script>
+  <script src="startpagina.js?v=qr-zichtbaar"></script>
   <script data-goatcounter="https://juuul.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
 </body>
 </html>
