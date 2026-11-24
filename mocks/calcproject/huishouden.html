@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="nl"><head><meta charset="utf-8">
+<meta name="robots" content="noindex">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>CalcProject · Huishouden-mockups</title>
+<style>
+  body{margin:0;background:#0d0d0d;font-family:"Segoe UI",Roboto,sans-serif;color:#fff;padding:24px;display:flex;flex-wrap:wrap;gap:28px;justify-content:center}
+  .col{display:flex;flex-direction:column;align-items:center;gap:12px}
+  .title{font-size:22px;font-weight:700}
+  .desc{font-size:14px;color:#bbb;width:340px;text-align:center;line-height:1.4}
+  .phone{width:340px;height:700px;background:#1f1f1f;border-radius:28px;border:6px solid #000;overflow:hidden;position:relative}
+  .bar{height:52px;display:flex;align-items:center;padding:0 16px;gap:16px;font-size:19px;font-weight:600}
+  .bar .r{margin-left:auto}
+  .hdr{padding:10px 16px 14px}
+  .hdr .n{font-size:20px;font-weight:700}.hdr .s{color:#9aa;font-size:13px}
+  .sec{background:#192f42;margin:0 8px;padding:12px 14px;font-weight:600;display:flex;align-items:center;gap:10px;font-size:15px}
+  .lh{display:flex;align-items:center;gap:10px;padding:12px 14px;font-weight:600;font-size:15px}
+  .plus{margin-left:auto;background:#163247;width:38px;height:34px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:22px}
+  .tile{margin:0 14px 10px;border:1px solid #23394a;border-radius:16px;padding:12px 14px;display:flex;gap:14px;align-items:center}
+  .tile .ic{font-size:22px;color:#aaa;width:26px;text-align:center}
+  .tile .l{font-size:17px;font-weight:600}.tile .sub{font-size:12px;color:#8a9}
+  .warn{color:#f2c14e}
+  .hh{border-color:#1B9AAA;background:#1B9AAA1f}
+  .chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
+  .chip{font-size:12px;background:#ffffff14;border-radius:10px;padding:3px 8px}
+  .gap{height:14px}
+  .btn{position:absolute;left:10px;right:10px;bottom:12px;border:1px solid #163247;border-radius:8px;padding:12px;text-align:center;font-size:15px}
+  .seg{display:flex;margin:0 14px 12px;background:#2a2a2a;border-radius:12px;padding:4px}
+  .seg div{flex:1;text-align:center;padding:9px;border-radius:9px;font-size:14px;font-weight:600;color:#aaa}
+  .seg .on{background:#163247;color:#fff}
+  .row{display:flex;justify-content:space-between;padding:10px 14px;margin:0 14px 8px;border:1px solid #23394a;border-radius:14px;font-size:15px}
+  .row span:last-child{color:#9aa}
+  .tag{position:absolute;top:60px;right:14px;background:#B2FFA9;color:#163247;font-weight:700;border-radius:8px;padding:2px 8px;font-size:12px}
+</style></head><body>
+
+<!-- A -->
+<div class="col">
+  <div class="title">A · Eigen blok</div>
+  <div class="desc">Huishouden krijgt een eigen kop, los van Personen. Geen +‑knop, want er is er altijd één.</div>
+  <div class="phone">
+    <div class="bar">←&nbsp; Emily en Daniel <span class="r">⌂ ⇪</span></div>
+    <div class="sec">Berekeningsinstellingen <span style="margin-left:auto">⌄</span></div>
+    <div class="lh">👥 Personen <div class="plus">+</div></div>
+    <div class="tile"><div class="ic">👤</div><div><div class="l">Emily</div><div class="sub">#1, 1 feb 1994</div></div></div>
+    <div class="tile"><div class="ic">👤</div><div><div class="l">Daniel</div><div class="sub">#3, 1 jan 1993</div></div></div>
+    <div class="gap"></div>
+    <div class="lh">🏠 Huishouden</div>
+    <div class="tile hh"><div class="ic">🏠</div><div><div class="l">Gedeelde posten</div><div class="sub">5 posten</div></div><span style="margin-left:auto;color:#aaa">›</span></div>
+    <div class="gap"></div>
+    <div class="sec">Geavanceerde berekening <span style="margin-left:auto">⌄</span></div>
+    <div class="btn">🖩 Berekenen</div>
+  </div>
+</div>
+
+<!-- B -->
+<div class="col">
+  <div class="title">B · Kaart bovenaan</div>
+  <div class="desc">Huishouden is de basis: een brede kaart direct onder de titel, met per soort het aantal. Personen eronder.</div>
+  <div class="phone">
+    <div class="bar">←&nbsp; Emily en Daniel <span class="r">⌂ ⇪</span></div>
+    <div class="tile hh" style="display:block;margin-top:6px">
+      <div style="display:flex;align-items:center;gap:12px"><div class="ic">🏠</div><div class="l">Huishouden</div><span style="margin-left:auto;color:#aaa">›</span></div>
+      <div class="chips"><span class="chip">Inkomen 1</span><span class="chip">Uitgaven 2</span><span class="chip">Leningen 1</span><span class="chip">Spaarplannen 1</span></div>
+    </div>
+    <div class="sec">Berekeningsinstellingen <span style="margin-left:auto">⌄</span></div>
+    <div class="lh">👥 Personen <div class="plus">+</div></div>
+    <div class="tile"><div class="ic">👤</div><div><div class="l">Emily</div><div class="sub">#1, 1 feb 1994</div></div></div>
+    <div class="tile"><div class="ic">👤</div><div><div class="l">Daniel</div><div class="sub">#3, 1 jan 1993</div></div></div>
+    <div class="gap"></div>
+    <div class="sec">Geavanceerde berekening <span style="margin-left:auto">⌄</span></div>
+    <div class="btn">🖩 Berekenen</div>
+  </div>
+</div>
+
+<!-- C -->
+<div class="col">
+  <div class="title">C · Tabbladen</div>
+  <div class="desc">Schakelaar bovenaan: Personen | Huishouden. Het huishouden toont de posten direct, zonder extra scherm.</div>
+  <div class="phone">
+    <div class="bar">←&nbsp; Emily en Daniel <span class="r">⌂ ⇪</span></div>
+    <div class="sec" style="margin-bottom:12px">Berekeningsinstellingen <span style="margin-left:auto">⌄</span></div>
+    <div class="seg"><div>👥 Personen (2)</div><div class="on">🏠 Huishouden</div></div>
+    <div class="lh" style="padding-top:2px">Inkomen <div class="plus">+</div></div>
+    <div class="row"><span>Huur garage</span><span>€ 150 /mnd</span></div>
+    <div class="lh">Uitgaven <div class="plus">+</div></div>
+    <div class="row"><span>Boodschappen</span><span>€ 600 /mnd</span></div>
+    <div class="row"><span>Energie</span><span>€ 180 /mnd</span></div>
+    <div class="lh">Leningen <div class="plus">+</div></div>
+    <div class="row"><span>Hypotheek <span class="warn">⚠</span></span><span>€ 310.000</span></div>
+    <div class="btn">🖩 Berekenen</div>
+  </div>
+</div>
+
+</body></html>
